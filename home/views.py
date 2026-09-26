@@ -45,7 +45,7 @@ def sourch_product(request):
 def Filter(request):
     query1 = request.GET.get("category_1") # filter html dagi namesi
     if query1 != '0':
-        natija = Product.objects.filter(category=query1)
+        natija = Product.objects.filter(category=query1) # modeldagi productga ulangan categoriya nomi
         
     else:
         natija = Product.objects.all()
