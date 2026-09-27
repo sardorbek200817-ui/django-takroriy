@@ -25,7 +25,9 @@ def Product_id(request , id):
    
      
 def sourch_product(request):   
-    query = request.GET.get("query") # bu html input dagi nomi
+    query = request.GET.get("query")
+     # bu html input dagi nomi yani ozgaruvchi nomiga imputdagi 
+    # aynan osha yoziladigan joyni ovolyabmiz
     
     if query: # query topilmay qolmasa
         
@@ -43,7 +45,10 @@ def sourch_product(request):
         #   Filter qismi N2
         
 def Filter(request):
-    query1 = request.GET.get("category_1") # filter html dagi namesi
+    query1 = request.GET.get("category_1") # filter html dagi namesi 
+     # yani ozgaruvchi nomiga imputdagi 
+    # aynan osha yoziladigan joyni ovolyabmiz
+    
     if query1 != '0':
         natija = Product.objects.filter(category=query1) # modeldagi productga ulangan categoriya nomi
         
