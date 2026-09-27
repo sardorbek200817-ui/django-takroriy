@@ -4,6 +4,15 @@ from .models import Product , Category
 import sys
 
 objects # hama malumotlar uchun
+Product.objects.filter(name__contains=query)   bu masalan Product.objects yani Productdagi hamma
+malumotni filter esa product dagi hamma malumotni filterlab ber degan manoda yani Product.objects bu 
+Product dagi hamma malumotni olishni bildiradi
+
+
+
+# query = request.GET.get("query") bu esa sorovdagi bitta malumotni bittasini olishni
+
+
 
 def Product1(request):
     all_1 = Product.objects.all()
