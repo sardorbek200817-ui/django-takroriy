@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from .models import Product , Category
 import sys
 
+objects # hama malumotlar uchun
 
 def Product1(request):
     all_1 = Product.objects.all()
