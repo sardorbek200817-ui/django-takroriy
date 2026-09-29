@@ -80,6 +80,12 @@ def card(request):
     return render(request , 'templates/card.html')
 
 
+                    MISOL
+misol uchun bunda narxi 900 dan baland bolgan mahsulotlarni
+chiqarib beradi lt esa 900 dan past bolganlarni
+
+#def product(request):
+#    mahsulot = Mahsulot.objects.filter(narx__gt=900)
 
 
 # boshqacha qilb ham >>> def salom(request , yil)
